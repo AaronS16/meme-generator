@@ -1,16 +1,25 @@
+import memesData from "../memesData";
+
+
 const Form = () => {
   const handleClick = () => {
-    console.log('Clickety click')
+    const memesArray = memesData.data.memes;
+    const randomNum = Math.floor(Math.random() * memesArray.length);
+    const url = memesArray[randomNum].url
+    console.log(url)
   }
+
   return (
     <main>
-      <form className='input-forms'>
+      <div className='input-forms'>
         <input className="form-text" type="text" placeholder="Top Text"></input>
         <input className="form-text" type="text" placeholder="Bottom Text"></input>
         <button onClick={handleClick} className='form-button'>Get a new meme image 🖼</button>
-      </form>
+      </div>
     </main>
   )
 }
+
+
 
 export default Form
