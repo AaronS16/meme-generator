@@ -12,6 +12,7 @@ function App() {
       test = things.map((thing, index) =>
         <p key={index}>{thing}</p>
       )
+  
   return (
     <div className="">
       <Header />
