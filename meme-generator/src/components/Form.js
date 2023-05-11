@@ -14,6 +14,8 @@ const Form = () => {
     setMemeImage(url)
   }
 
+  
+
   return (
     <main>
       <div className='input-forms'>
