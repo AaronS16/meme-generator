@@ -10,7 +10,6 @@ function App() {
     <div className="">
       <Header />
       <Form />
-      
     </div>
   );
 }
